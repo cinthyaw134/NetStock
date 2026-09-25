@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "sku": "NET-MTK01",
+        "name": "MikroTik",
+        "category_id": 1,
+        "unit": "pcs",
+        "stock": 5,
+        "min_stock": 2
+    },
+    {
+        "id": 2,
+        "sku": "NET-RTR01",
+        "name": "Router",
+        "category_id": 1,
+        "unit": "pcs",
+        "stock": 10,
+        "min_stock": 2
+    },
+    {
+        "id": 3,
+        "sku": "KAB-CAT6",
+        "name": "Kabel UTP Cat6",
+        "category_id": 2,
+        "unit": "meter",
+        "stock": 130,
+        "min_stock": 50
+    },
+    {
+        "id": 4,
+        "sku": "KON-RJ45",
+        "name": "Konektor RJ45",
+        "category_id": 2,
+        "unit": "pcs",
+        "stock": 50,
+        "min_stock": 50
+    },
+    {
+        "id": 5,
+        "sku": "ALT-TANG1",
+        "name": "Tang Crimping",
+        "category_id": 3,
+        "unit": "pcs",
+        "stock": 4,
+        "min_stock": 1
+    }
+]

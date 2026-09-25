@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="id"><head> <link rel="icon" href="assets/img/logo.png"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title><?= isset($pageTitle) ? e($pageTitle).' - ' : '' ?>NetStock</title><link rel="stylesheet" href="assets/css/style.css"></head><body>
+<div class="wrapper"><aside class="sidebar"><div class="brand"><div class="brand-icon"><img src="assets/img/logo.png" alt="Logo"></div><div><strong>NetStock</strong><small>Inventori & Manajemen</small></div></div><nav>
+<a href="index.php" class="<?= basename($_SERVER['PHP_SELF'])=='index.php'?'active':'' ?>">⌂ <span>Dashboard</span></a><div class="nav-label">MASTER DATA</div>
+<a href="item_add.php" class="<?= basename($_SERVER['PHP_SELF'])=='item_add.php'?'active':'' ?>">⊕ <span>Tambah Alat Baru</span></a>
+<a href="categories.php" class="<?= in_array(basename($_SERVER['PHP_SELF']),['categories.php','category_add.php','category_edit.php'])?'active':'' ?>">▦ <span>Kategori</span></a>
+<a href="item_manage.php" class="<?= in_array(basename($_SERVER['PHP_SELF']),['item_manage.php'])?'active':'' ?>">🗑 <span>Kelola Alat</span></a><div class="nav-label">TRANSAKSI</div>
+<a href="stock_history.php" class="<?= basename($_SERVER['PHP_SELF'])=='stock_history.php'?'active':'' ?>">⟳ <span>Riwayat Lengkap</span></a></nav>
+<div class="sidebar-user"><div class="sidebar-user-name">👤 <?= e($_SESSION['username'] ?? 'Admin') ?></div><a href="logout.php" class="sidebar-logout">Logout</a></div></aside><main class="content"><header class="app-top"><button class="menu-button" type="button">☰</button><div class="top-spacer"></div><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Ganti tema" title="Ganti tema"><span id="theme-icon">☾</span></button><div class="top-user">👤 <span><?= e($_SESSION['username'] ?? 'Admin') ?></span></div></header>
+<?php if (!empty($_SESSION['flash'])): ?><div class="alert alert-<?= e($_SESSION['flash']['type']) ?>"><?= e($_SESSION['flash']['message']) ?></div><?php unset($_SESSION['flash']); endif; ?>

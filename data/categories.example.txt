@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Perangkat Jaringan",
+        "description": "Router, OLT, ONU, switch, dan perangkat jaringan"
+    },
+    {
+        "id": 2,
+        "name": "Kabel & Konektor",
+        "description": "Kabel fiber, UTP, konektor, dan aksesoris"
+    },
+    {
+        "id": 3,
+        "name": "Alat Instalasi",
+        "description": "Alat bantu pemasangan dan perbaikan"
+    }
+]

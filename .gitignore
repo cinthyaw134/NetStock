@@ -1,0 +1,12 @@
+# Data asli aplikasi (berisi hash password & data stok pribadi)
+# Jangan di-commit — pakai file .example.txt sebagai contoh format
+data/items.txt
+data/categories.txt
+data/transactions.txt
+data/users.txt
+
+# File OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
